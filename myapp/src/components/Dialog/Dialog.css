@@ -1,0 +1,74 @@
+
+.dialog-overlay {
+width: 425px;
+height: 316px;
+padding: 24px 0px 0px 0px;
+gap: 16px;
+border-radius: 8px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+border: 1px solid #CBD5E1
+
+  }
+  
+  
+  .dialog-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  
+  .dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+  .dialog-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .dialog-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .dialog-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  
+  .dialog-button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .dialog-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
