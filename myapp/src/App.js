@@ -1,51 +1,62 @@
 
-import React, { useState } from "react";
-import { inputBoxData } from "./data"; 
-import Navbar from "./components/Navbar/Navbar";
+
+import './App.css';
+ import Navbar from "./components/Navbar/Navbar";
 import { links, logo, showDiscord } from "./data"; 
 import Footer from "./components/Footer/Footer";
 import { footerLinks, socialLinks } from "./data";
-import { headers, rows } from './data';
-import Table from "./components/Table/Table";
+
 import { ButtonGroup } from "./components/Button/Button";
-import InputBox from "./components/InputBox/InputBox"; 
-import Poster from "./components/Poster/Poster";
-import { posterData } from "./data";
-import Dialog from "./components/Dialog/Dialog";
-import { handleDialogSubmit } from "./data"
-import HoverCard from "./components/HoverCard/HoverCard";
-import { hoverCardData } from "./data";
+import CardComponent from './components/CardComponent/CardComponent';
+import {cardData}  from "./data";
+import BlogList from './components/BlogCard/BlogList';
+
+
+
+
+
+
+
 
 
 
 function App() {
-  const [inputValue, setInputValue] = useState(inputBoxData.value); 
+  
+  
+
+
+  
+
+  
   
   return (
-    <div>
+    <div className="App">
       <Navbar 
         logo={logo} 
         links={links} 
         showDiscord={showDiscord} 
       />
       <Footer footerLinks={footerLinks} socialLinks={socialLinks} />
-      <Table headers={headers} rows={rows} />
+      
       <ButtonGroup /> 
-
-      <InputBox
-        placeholder={inputBoxData.placeholder} 
-        value={inputValue} 
-        onChange={(e) => setInputValue(e.target.value)} 
+      <div style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
+      <CardComponent
+        title={cardData.title}
+        description={cardData.description}
+        leftButtonLabel={cardData.leftButtonLabel}
+        rightButtonLabel={cardData.rightButtonLabel}
       />
+      
+    </div>
 
-      <Poster data={posterData} />
-       <Dialog onSubmit={handleDialogSubmit} />
-
-       <HoverCard cardData={hoverCardData} />
+  
+    <BlogList/>
+    
 
 
       
-     </div>
+
+      </div>
   );
 }
 

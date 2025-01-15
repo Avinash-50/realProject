@@ -53,13 +53,7 @@ export const socialLinks = [
 // ----Table----
 
 
-export const headers = ["King's Treasury", "People's happiness"];
 
-export const rows = [
-  ["Empty", "Overflowing"],
-  ["Modest", "Satisfied"],
-  ["Empty", "Overflowing"],
-];
 
 
 // Button
@@ -88,58 +82,29 @@ export const buttonData = [
 ];
 
 
+//  ________card________________________
 
-export const inputBoxData = {
-  placeholder: "Enter your text...",
-  value: "", 
+export const cardData = {
+  title: "Free Image Generation",
+  description: "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+  leftButtonLabel: "Flux Pro",
+  rightButtonLabel: "Start Generating",
 };
 
-// Poster
-export const posterData = [
+ 
+
+
+const blogData = [
   {
     id: 1,
-    heading: "shadcn/ui",
-    subheading: "Beautifully designed components built with Radix UI and Tailwind CSS.",
-    logoStyle: { backgroundColor: "#FF08B6" },
+    title: "What is Lorem Ipsum?",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    date: "06 Dec, 2024",
+    time: "28 min",
+    author: "Ankit Singh",
   },
-  
-  
+ 
 ];
 
-
-export const dialogContent = {
-  title: "Edit Profile",
-  namePlaceholder: "Your Name",
-  emailPlaceholder: "Your Email",
-  buttonText: "Submit",
-};
-
-
-export const handleDialogSubmit = (data) => {
-  console.log("Form submitted:", data);
-};
-
-// HoverCard
-export const hoverCardData = [
-  {
-    logoStyle: {
-      width: '50px',
-      height: '50px',
-      backgroundColor: '#FF6347', 
-      borderRadius: '50%'
-    },
-    name: '@nextjs',
-    description: 'The React Framework - created and maintained by @vercel',
-    joinDate: 'Joined December 2021'
-  },
-  
-    
-  
-];
-
-
-
-
-
-  
-  
+export default blogData;
