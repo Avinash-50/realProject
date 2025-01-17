@@ -108,3 +108,37 @@ const blogData = [
 ];
 
 export default blogData;
+
+
+export const heroData = [
+  {
+    heading: "What is Lorem Ipsum?",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    buttonText: "Explore Now",
+  }
+];
+
+
+
+export const statusIndicatorData = {
+  imageSrc: "/HD.png",
+  altText: "High Definition",
+  description: "Lorem Ipsum is simply dummy text",
+};
+
+export const featureData = 
+  {
+    id: 1,
+    title: "Imagination to reality",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      imageSrc: "/Feature.png",
+    
+  };
+ 
+
+
+
+
+
+

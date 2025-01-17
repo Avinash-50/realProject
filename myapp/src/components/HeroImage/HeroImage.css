@@ -1,0 +1,51 @@
+.HeroImage_section{
+ width: 1120px;
+height: 242px;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color:  #FF08B6;
+
+ }
+ .heading{
+    font-family: Gilroy-Bold;
+font-size: 28px;
+font-weight: 400;
+line-height: 42px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+}
+.descrption{
+    height: 48px;
+    width: 600px;
+font-family: Gilroy-Medium;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+
+
+}
+.btn{
+width: 108px;
+height: 34px;
+padding: 0px 14px 0px 14px;
+gap: 8px;
+border-radius: 30px ;
+background-color: #131313;
+font-family: Gilroy-Bold;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+}

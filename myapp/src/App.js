@@ -10,26 +10,18 @@ import { ButtonGroup } from "./components/Button/Button";
 import CardComponent from './components/CardComponent/CardComponent';
 import {cardData}  from "./data";
 import BlogList from './components/BlogCard/BlogList';
-
-
-
-
-
-
-
+import HeroImage from './components/HeroImage/HeroImage';
+import { heroData } from "./data";
+import StatusIndicator from './components/StatusIndicator/StatusIndicator';
+import { statusIndicatorData } from "./data";
+import Feature from './components/Feature/Feature';
+import {featureData } from "./data";
 
 
 
 function App() {
   
-  
-
-
-  
-
-  
-  
-  return (
+return (
     <div className="App">
       <Navbar 
         logo={logo} 
@@ -51,13 +43,20 @@ function App() {
 
   
     <BlogList/>
+    <HeroImage heroData={heroData[0]} />
+    <StatusIndicator
+        imageSrc={statusIndicatorData.imageSrc}
+        altText={statusIndicatorData.altText}
+        description={statusIndicatorData.description}
+      />
+      <Feature
+        title = {featureData.title}
+        description= {featureData.description}
+        imageSrc= {featureData.imageSrc}
+
+      />
     
-
-
-      
-
-      </div>
+ </div>
   );
 }
-
 export default App;
